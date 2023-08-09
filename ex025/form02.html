@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulário 2</title>
     <style>
         * {
             font-family: Arial, Helvetica, sans-serif;
@@ -11,15 +11,15 @@
     </style>
 </head>
 <body>
-    <h1>Meu primeiro formulário</h1>
+    <h1>Meu segundo formulário</h1>
     <form action="cadastro.php" method="post" autocomplete="on"> <!--method=post não mandar o conteudo pra URL e o get mostra na URL -->
         <p>                                                      <!--autocomplete="on" deixar liga ou não o completar nas caixas-->
-            <label for="inome">Nome:</label>             
-            <input type="text" name="nome" id="inome" required minlength="3" required maxlength="12" size="12" placeholder="Primeiro Nome" autocomplete="username">
+            <label for="iusu">Usuário: </label>             
+            <input type="text" name="nome" id="iusu" required minlength="3" required maxlength="12" size="12" placeholder="Nome do Usúario" autocomplete="username">
         </p>
         <p>
-            <label for="isobrenome">Sobrenome:</label> 
-            <input type="text" name="sobrenome" id="isobrenome" required minlength="3" required maxlength="12" size="12" placeholder="Ultimo Nome" autocomplete="username">
+            <label for="isen">Senha: </label> 
+            <input type="password" name="sen" id="isobrenome" required minlength="8" required maxlength="15" size="15" placeholder="Mínimo 8 Letras" autocomplete="current-password">
         </p>
         <p>
             <input type="submit" value="Enviar">
